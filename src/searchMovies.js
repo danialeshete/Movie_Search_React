@@ -35,7 +35,7 @@ export default function SearchMovies() {
           value={query}
           onChange={e => setQuery(e.target.value)}
         />
-        <button className="button" type="submit">
+        <button disabled={query.length < 1} className="button" type="submit">
           Search
         </button>
       </form>
