@@ -1,3 +1,3 @@
-# react-xecyb1
+# Movie Search using React and The Movie Database API
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-xecyb1)
+[View it here ⚡️](https://moviesearch.stackblitz.io/)
