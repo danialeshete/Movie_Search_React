@@ -50,6 +50,11 @@ small {
   border: 1px solid #ddd;
   margin-bottom: 1rem;
 }
+.range {
+}
+#year{
+  font-size: 1.7rem;
+}
 
 .button {
   background-color: rgba(0, 0, 0, 0.75);
@@ -68,7 +73,7 @@ small {
 
 @media (min-width: 786px) {
   .form {
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: auto 1fr auto auto auto;
     grid-gap: 1rem;
     align-items: center;
   }
