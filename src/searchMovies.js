@@ -29,28 +29,32 @@ export default function SearchMovies() {
         <label className="label" htmlFor="query">
           Movie Name
         </label>
+
         <input
           className="input"
           type="text"
           name="query"
           placeholder="i.e. Jurassic Park"
           value={query}
+          pattern="^[0-9a-zA-Z][\sa-zA-Z]*"
+          title="Can use upper and lower letters, and spaces but must not start with a space"
           onChange={e => setQuery(e.target.value)}
         />
-        <span className="label" id="year">
-          1960
-        </span>
-        <input
-          type="range"
-          min="1900"
-          max="2021"
-          value={year}
-          onChange={e => {
-            setYear(e.target.value);
-            document.getElementById("year").innerHTML = e.target.value;
-          }}
-          className="range"
-        />
+
+        <div className="range">
+          <span id="year" />
+          <input
+            type="range"
+            min="1900"
+            max="2021"
+            value={year}
+            onChange={e => {
+              setYear(e.target.value);
+              document.getElementById("year").innerHTML = e.target.value;
+            }}
+          />
+        </div>
+
         <button disabled={query.length < 1} className="button" type="submit">
           Search
         </button>
